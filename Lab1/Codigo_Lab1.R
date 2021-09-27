@@ -4,8 +4,8 @@
 require(dplyr) 
 
 
-url<-"https://raw.githubusercontent.com/Albertorz31/TMDA/main/DryBeanDataset/Dry_Bean_Dataset.arff"
+url<-"https://raw.githubusercontent.com/Albertorz31/TMDA/main/DryBeanDataset/Dry_Bean_Dataset.csv"
 
 # Leemos los datos
-beans <- read.table(url, header = TRUE, sep = ",")
+beans <- read.csv(url, skip = 1, header = FALSE, sep=";")
 
